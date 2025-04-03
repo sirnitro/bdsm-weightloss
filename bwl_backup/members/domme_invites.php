@@ -51,7 +51,7 @@ $invites = $stmt->fetchAll();
         <button type="submit" name="generate" class="btn-primary">Generate New Invite Link</button>
     </form>
 
-    <h3>Invite Submissve</h3>
+    <h3>Invite theirtory</h3>
 
     <table class="table">
         <thead>
@@ -68,7 +68,7 @@ $invites = $stmt->fetchAll();
             <?php
             $used = $invite['used_by'] ? 1 : 0;
             $status = $invite['is_revoked'] ? 'Revoked' : ($used >= $invite['max_uses'] ? 'Used' : 'Active');
-            $link = BASE_URL . "link_submissive.php?code=" . $invite['code'];
+            $link = BASE_URL . "/auth/link.php?code=" . $invite['code'];
             ?>
             <tr>
                 <td>
