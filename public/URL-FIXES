@@ -1,0 +1,9 @@
+function url($path) {
+    return rtrim(BASE_URL, '/') . '/' . ltrim($path, '/');
+}
+
+
+<a href="<?= url('auth/login.php') ?>">Login</a>
+header("Location: " . url('auth/login.php'));
+
+require_once BASE_PATH . '/inc/config.php';

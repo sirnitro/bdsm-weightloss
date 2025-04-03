@@ -1,0 +1,147 @@
+admin/user_add.php:    if (!in_array($orientation, ['submissive', 'domme'])) {
+admin/user_add.php:            <option value="domme" <?= ($orientation ?? '') === 'domme' ? 'selected' : '' ?>>Dominant</option>
+admin/user_edit.php:    <option value="domme" <?= $user['orientation'] === 'domme' ? 'selected' : '' ?>>Domme</option>
+auth/register.php:if (!in_array($orientation, ['domme', 'sub'])) {
+auth/register.php:    <option value="domme">Dominant</option>
+css/styles.css:.domme-card {
+css/styles.css:.domme-card h3 {
+css/styles.css:.domme-quote {
+css/styles.css:.domme-quote footer {
+css/styles.css:.domme-command,
+css/styles.css:.domme-banner {
+css/styles.css:.domme-banner {
+grep.sh:grep -Ri --color=auto "Domme" * >> ../refactor-todo.txt
+members/link.php:    echo "<p class='info'>You are already linked to a Domme. Ask them to release you first.</p>";
+members/link.php:echo "<h2>✅ You are now linked to your Domme.</h2>";
+members/link.php:// Fetch domme email
+members/link.php:$domme = $stmt->fetch();
+members/link.php:if ($domme) {
+members/link.php:        <p>Hello {$domme['display_name']},</p>
+members/link.php:        <p>You can now view and control them from your Domme Dashboard.</p>
+members/link.php:    send_email($domme['email'], $subject, $body); // assumes send_email() is set up
+members/domme_subs.php:if (!is_logged_in() || $_SESSION['orientation'] !== 'domme') {
+members/domme_invites.php:if (!is_logged_in() || $_SESSION['orientation'] !== 'domme') {
+members/dashboard.php:    echo "<div class='domme-banner'>🎀 You are owned by: <strong>{$display}</strong></div>";
+members/view_challenge.php:    <div class="domme-command">
+pages/program_view.php:<div class="domme-card">
+pages/program_view.php:<blockquote class="domme-quote">
+pages/view_challenge.php:    <div class="domme-command">
+refactor-todo.txt:admin/user_add.php:    if (!in_array($orientation, ['submissive', 'domme'])) {
+refactor-todo.txt:admin/user_add.php:            <option value="domme" <?= ($orientation ?? '') === 'domme' ? 'selected' : '' ?>>Dominant</option>
+refactor-todo.txt:admin/user_edit.php:    <option value="domme" <?= $user['orientation'] === 'domme' ? 'selected' : '' ?>>Domme</option>
+refactor-todo.txt:auth/register.php:if (!in_array($orientation, ['domme', 'sub'])) {
+refactor-todo.txt:auth/register.php:    <option value="domme">Dominant</option>
+refactor-todo.txt:css/styles.css:.domme-card {
+refactor-todo.txt:css/styles.css:.domme-card h3 {
+refactor-todo.txt:css/styles.css:.domme-quote {
+refactor-todo.txt:css/styles.css:.domme-quote footer {
+refactor-todo.txt:css/styles.css:.domme-command,
+refactor-todo.txt:css/styles.css:.domme-banner {
+refactor-todo.txt:css/styles.css:.domme-banner {
+refactor-todo.txt:grep.sh:grep -Ri --color=auto "Domme" * >> refactor-todo.txt
+refactor-todo.txt:members/link.php:    echo "<p class='info'>You are already linked to a Domme. Ask them to release you first.</p>";
+refactor-todo.txt:members/link.php:echo "<h2>✅ You are now linked to your Domme.</h2>";
+refactor-todo.txt:members/link.php:// Fetch domme email
+refactor-todo.txt:members/link.php:$domme = $stmt->fetch();
+refactor-todo.txt:members/link.php:if ($domme) {
+refactor-todo.txt:members/link.php:        <p>Hello {$domme['display_name']},</p>
+refactor-todo.txt:members/link.php:        <p>You can now view and control them from your Domme Dashboard.</p>
+refactor-todo.txt:members/link.php:    send_email($domme['email'], $subject, $body); // assumes send_email() is set up
+refactor-todo.txt:members/domme_subs.php:if (!is_logged_in() || $_SESSION['orientation'] !== 'domme') {
+refactor-todo.txt:members/domme_invites.php:if (!is_logged_in() || $_SESSION['orientation'] !== 'domme') {
+refactor-todo.txt:members/dashboard.php:    echo "<div class='domme-banner'>🎀 You are owned by: <strong>{$display}</strong></div>";
+refactor-todo.txt:members/view_challenge.php:    <div class="domme-command">
+refactor-todo.txt:pages/program_view.php:<div class="domme-card">
+refactor-todo.txt:pages/program_view.php:<blockquote class="domme-quote">
+refactor-todo.txt:pages/view_challenge.php:    <div class="domme-command">
+admin/user_add.php:    $orientation = $_POST['orientation'] ?? 'submissive';
+admin/user_add.php:    if (!in_array($orientation, ['submissive', 'domme'])) {
+admin/user_add.php:            <option value="submissive" <?= ($orientation ?? '') === 'submissive' ? 'selected' : '' ?>>Submissive</option>
+admin/user_edit.php:  $orientation = $_POST['orientation'] ?? 'submissive'; // ✅ This line prevents both errors
+admin/user_edit.php:    <option value="submissive" <?= $user['orientation'] === 'submissive' ? 'selected' : '' ?>>Submissive</option>
+auth/register.php:    <option value="sub">Submissive</option>
+members/link.php:    $subject = "New Submissive Linked to You";
+members/link.php:        <p>Your new submissive (<strong>{$_SESSION['display_name']}</strong>) has linked to you via your invite code.</p>
+members/domme_subs.php:    $message = "Submissive unlinked.";
+members/domme_invites.php:    <h2>Submissive Invite Links</h2>
+pages/program_view.php:        <li>Submissive rituals to reshape your mindset</li>
+refactor-todo.txt:admin/user_add.php:    if (!in_array($orientation, ['submissive', 'domme'])) {
+auth/register.php:    	    <input type="text" name="pronouns" id="pronouns" placeholder="e.g., he/him, she/her, they/them">
+members/link.php:echo "<p>Submit well. Obey always. Don’t disappoint her...</p>";
+auth/register.php:    	    <input type="text" name="pronouns" id="pronouns" placeholder="e.g., he/him, she/her, they/them">
+admin/user_add.php:    if (!in_array($orientation, ['submissive', 'domme'])) {
+admin/user_add.php:            <option value="domme" <?= ($orientation ?? '') === 'domme' ? 'selected' : '' ?>>Dominant</option>
+admin/user_edit.php:    <option value="domme" <?= $user['orientation'] === 'domme' ? 'selected' : '' ?>>Domme</option>
+auth/register.php:if (!in_array($orientation, ['domme', 'sub'])) {
+auth/register.php:    <option value="domme">Dominant</option>
+css/styles.css:.domme-card {
+css/styles.css:.domme-card h3 {
+css/styles.css:.domme-quote {
+css/styles.css:.domme-quote footer {
+css/styles.css:.domme-command,
+css/styles.css:.domme-banner {
+css/styles.css:.domme-banner {
+grep.sh:grep -Ri --color=auto "\bdomme\b" * > ../refactor-todo.txt
+grep.sh:grep -Ri --color=auto "Domme" * >> ../refactor-todo.txt
+members/link.php:$stmt = $pdo->prepare("SELECT * FROM domme_invites WHERE code = ? AND is_revoked = 0 AND expires_at > NOW()");
+members/link.php:$stmt = $pdo->prepare("SELECT COUNT(*) FROM users WHERE domme_id = ?");
+members/link.php:$stmt->execute([$invite['domme_id']]);
+members/link.php:$stmt = $pdo->prepare("SELECT domme_id FROM users WHERE id = ?");
+members/link.php:    echo "<p class='info'>You are already linked to a Domme. Ask them to release you first.</p>";
+members/link.php:$stmt = $pdo->prepare("UPDATE users SET domme_id = ? WHERE id = ?");
+members/link.php:$stmt->execute([$invite['domme_id'], $user_id]);
+members/link.php:echo "<h2>✅ You are now linked to your Domme.</h2>";
+members/link.php:// Fetch domme email
+members/link.php:$stmt->execute([$invite['domme_id']]);
+members/link.php:$domme = $stmt->fetch();
+members/link.php:if ($domme) {
+members/link.php:        <p>Hello {$domme['display_name']},</p>
+members/link.php:        <p>You can now view and control them from your Domme Dashboard.</p>
+members/link.php:    send_email($domme['email'], $subject, $body); // assumes send_email() is set up
+members/domme_subs.php:if (!is_logged_in() || $_SESSION['orientation'] !== 'domme') {
+members/domme_subs.php:    $stmt = $pdo->prepare("UPDATE users SET domme_id = NULL WHERE id = ? AND domme_id = ?");
+members/domme_subs.php:$stmt = $pdo->prepare("SELECT id, display_name, email FROM users WHERE domme_id = ?");
+members/domme_invites.php:if (!is_logged_in() || $_SESSION['orientation'] !== 'domme') {
+members/domme_invites.php:    $stmt = $pdo->prepare("INSERT INTO domme_invites (domme_id, code, expires_at, max_uses) VALUES (?, ?, ?, ?)");
+members/domme_invites.php:    $stmt = $pdo->prepare("UPDATE domme_invites SET is_revoked = 1 WHERE id = ? AND domme_id = ?");
+members/domme_invites.php:$stmt = $pdo->prepare("SELECT * FROM domme_invites WHERE domme_id = ? ORDER BY created_at DESC");
+members/dashboard.php:    $stmt = $pdo->prepare("SELECT display_name FROM users WHERE id = (SELECT domme_id FROM users WHERE id = ?)");
+members/dashboard.php:    $dommeName = $stmt->fetchColumn();
+members/dashboard.php:    if ($dommeName) {
+members/dashboard.php:        $stmt = $pdo->prepare("SELECT display_name, title FROM users WHERE id = (SELECT domme_id FROM users WHERE id = ?)");
+members/dashboard.php:$dommeData = $stmt->fetch();
+members/dashboard.php:if ($dommeData) {
+members/dashboard.php:    $display = $dommeData['title'] ? "{$dommeData['title']} {$dommeData['display_name']}" : $dommeData['display_name'];
+members/dashboard.php:    echo "<div class='domme-banner'>🎀 You are owned by: <strong>{$display}</strong></div>";
+members/view_challenge.php:    <div class="domme-command">
+pages/program_view.php:<div class="domme-card">
+pages/program_view.php:<blockquote class="domme-quote">
+pages/view_challenge.php:    <div class="domme-command">
+refactor-todo.txt:admin/user_add.php:    if (!in_array($orientation, ['submissive', 'domme'])) {
+refactor-todo.txt:admin/user_add.php:            <option value="domme" <?= ($orientation ?? '') === 'domme' ? 'selected' : '' ?>>Dominant</option>
+refactor-todo.txt:admin/user_edit.php:    <option value="domme" <?= $user['orientation'] === 'domme' ? 'selected' : '' ?>>Domme</option>
+refactor-todo.txt:auth/register.php:if (!in_array($orientation, ['domme', 'sub'])) {
+refactor-todo.txt:auth/register.php:    <option value="domme">Dominant</option>
+refactor-todo.txt:css/styles.css:.domme-card {
+refactor-todo.txt:css/styles.css:.domme-card h3 {
+refactor-todo.txt:css/styles.css:.domme-quote {
+refactor-todo.txt:css/styles.css:.domme-quote footer {
+refactor-todo.txt:css/styles.css:.domme-command,
+refactor-todo.txt:css/styles.css:.domme-banner {
+refactor-todo.txt:css/styles.css:.domme-banner {
+refactor-todo.txt:grep.sh:grep -Ri --color=auto "Domme" * >> refactor-todo.txt
+refactor-todo.txt:members/link.php:    echo "<p class='info'>You are already linked to a Domme. Ask them to release you first.</p>";
+refactor-todo.txt:members/link.php:echo "<h2>✅ You are now linked to your Domme.</h2>";
+refactor-todo.txt:members/link.php:// Fetch domme email
+refactor-todo.txt:members/link.php:$domme = $stmt->fetch();
+refactor-todo.txt:members/link.php:if ($domme) {
+refactor-todo.txt:members/link.php:        <p>Hello {$domme['display_name']},</p>
+refactor-todo.txt:members/link.php:        <p>You can now view and control them from your Domme Dashboard.</p>
+refactor-todo.txt:members/link.php:    send_email($domme['email'], $subject, $body); // assumes send_email() is set up
+refactor-todo.txt:members/domme_subs.php:if (!is_logged_in() || $_SESSION['orientation'] !== 'domme') {
+refactor-todo.txt:members/domme_invites.php:if (!is_logged_in() || $_SESSION['orientation'] !== 'domme') {
+refactor-todo.txt:members/dashboard.php:    echo "<div class='domme-banner'>🎀 You are owned by: <strong>{$display}</strong></div>";
+refactor-todo.txt:members/view_challenge.php:    <div class="domme-command">
+refactor-todo.txt:pages/program_view.php:<div class="domme-card">
+refactor-todo.txt:pages/program_view.php:<blockquote class="domme-quote">
+refactor-todo.txt:pages/view_challenge.php:    <div class="domme-command">

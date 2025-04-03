@@ -1,0 +1,14 @@
+send_email(
+    'user@example.com',
+    'Welcome to BDSM Weight Loss',
+    '<h1>Let the transformation begin</h1><p>Your journey starts now.</p>'
+);
+
+
+$template = get_email_template('welcome_user');
+
+$subject = replace_placeholders($template['subject'], ['name' => 'John']);
+$body    = replace_placeholders($template['body'], ['name' => 'John', 'url' => BASE_URL . 'dashboard.php']);
+
+send_email('john@example.com', $subject, $body);
+

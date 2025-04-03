@@ -1,0 +1,34 @@
+28 Day Plan
+Get all exercises by workout area:
+
+SELECT e.exercise_name, w.area_name, t.type_name, e.sets, e.reps, e.rest_time
+FROM exercises e
+JOIN workout_areas w ON e.workout_area_id = w.id
+JOIN workout_types t ON e.workout_type_id = t.id
+WHERE w.area_name = 'Chest';
+
+Get all exercises for a specific workout type:
+
+SELECT e.exercise_name, w.area_name, t.type_name
+FROM exercises e
+JOIN workout_types t ON e.workout_type_id = t.id
+WHERE t.type_name = 'Strength Training';
+
+
+Retrieve All Exercises for Legs
+SELECT e.exercise_name, e.description, e.sets, e.reps, e.rest_time, e.difficulty_level, e.equipment
+FROM exercises e
+JOIN workout_areas w ON e.workout_area_id = w.id
+WHERE w.area_name = 'Legs';
+
+Retrieve Exercises by Difficulty Level
+SELECT e.exercise_name, e.description, e.sets, e.reps, e.rest_time, e.equipment 
+FROM exercises e
+WHERE e.difficulty_level = 'Beginner';
+
+Retrieve Exercises by Workout Type (e.g., Strength Training)
+SELECT e.exercise_name, w.area_name, t.type_name, e.sets, e.reps, e.rest_time, e.equipment
+FROM exercises e
+JOIN workout_types t ON e.workout_type_id = t.id
+WHERE t.type_name = 'Strength Training';
+

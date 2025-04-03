@@ -1,0 +1,74 @@
+Basal Metabolic Rate (BMR) Calculator
+Purpose: Estimates the number of calories a person burns at rest in a day.
+Inputs: Age, gender, weight, and height.
+Outputs: BMR in calories/day.
+Why it’s helpful: Helps users understand their calorie needs for weight loss, maintenance, or gain when combined with activity levels.
+3. Calorie Deficit Calculator
+Purpose: Helps users calculate how many calories they need to consume to lose weight.
+Inputs: BMR (or weight, height, age), activity level, and desired weight loss rate (e.g., 0.5–1 kg/week).
+Outputs: Suggested daily calorie intake for weight loss.
+Why it’s helpful: Encourages informed calorie planning for sustainable weight loss.
+4. Total Daily Energy Expenditure (TDEE) Calculator
+Purpose: Calculates the total number of calories a person burns daily, including activity.
+Inputs: BMR, activity level (sedentary, moderate, active, etc.).
+Outputs: TDEE in calories/day.
+Why it’s helpful: Helps users match calorie intake to their energy needs.
+5. Macros Calculator
+Purpose: Breaks down calorie needs into macronutrient (protein, fat, carbs) goals.
+Inputs: Daily calorie goal, percentage of calories from protein, fat, and carbs.
+Outputs: Grams of protein, fat, and carbs per day.
+Why it’s helpful: Useful for people following specific diets (e.g., keto, low-carb, high-protein).
+6. Ideal Body Weight (IBW) Calculator
+Purpose: Estimates a healthy target weight based on height and gender.
+Inputs: Height, gender, and frame size (optional).
+Outputs: Ideal weight range.
+Why it’s helpful: Helps users set realistic weight goals.
+7. Goal Weight Timeline Calculator
+Purpose: Estimates how long it will take to reach a goal weight based on calorie deficit or weight loss rate.
+Inputs: Current weight, goal weight, calorie deficit (or weekly weight loss goal).
+Outputs: Estimated timeline in weeks/months.
+Why it’s helpful: Provides a motivational timeline for users.
+8. Body Fat Percentage Calculator
+Purpose: Estimates the percentage of body weight that comes from fat.
+Inputs: Gender, age, weight, height, and waist/hip/neck measurements.
+Outputs: Body fat percentage and classification (essential, athlete, average, obese).
+Why it’s helpful: Helps track changes in body composition, not just weight.
+9. Weight Maintenance Calculator
+Purpose: Helps users calculate calorie intake to maintain their current weight.
+Inputs: Weight, height, age, activity level.
+Outputs: Maintenance calories/day.
+Why it’s helpful: Useful for transitioning from weight loss to maintenance.
+10. Hydration Calculator
+Purpose: Recommends daily water intake based on weight and activity.
+Inputs: Weight, activity level, and climate (optional).
+Outputs: Liters or ounces of water per day.
+Why it’s helpful: Promotes proper hydration, which is essential for weight loss and overall health.
+11. Exercise Calorie Burn Calculator
+Purpose: Estimates calories burned during specific exercises.
+Inputs: Weight, type of activity, duration, and intensity.
+Outputs: Calories burned.
+Why it’s helpful: Encourages physical activity by showing its impact on calorie expenditure.
+12. Waist-to-Hip Ratio Calculator
+Purpose: Measures body fat distribution and health risk.
+Inputs: Waist and hip measurements.
+Outputs: Waist-to-hip ratio and risk level (low, moderate, high).
+Why it’s helpful: Highlights health risks related to fat distribution.
+13. Step-to-Calories Calculator
+Purpose: Converts steps taken to calories burned.
+Inputs: Steps, weight, and stride length (optional).
+Outputs: Estimated calories burned.
+Why it’s helpful: Motivates users to track and increase daily activity levels.
+14. Sleep & Weight Loss Calculator
+Purpose: Estimates the relationship between sleep and calorie needs.
+Inputs: Age, sleep duration, and activity level.
+Outputs: Calorie adjustment based on sleep patterns.
+Why it’s helpful: Raises awareness of the role of sleep in weight loss.
+15. Heart Rate Zone Calculator
+Purpose: Helps users identify their target heart rate zones for optimal fat burning or cardio fitness.
+Inputs: Age and resting heart rate (optional).
+Outputs: Fat-burning and cardio heart rate zones.
+Why it’s helpful: Guides effective workouts for weight loss.
+16. Portion Size Calculator
+Purpose: Suggests appropriate portion sizes based on calorie goals.
+Inputs: Daily calorie target, number of meals/snacks.
+Outputs: Calories per meal/snack and portion sizes.

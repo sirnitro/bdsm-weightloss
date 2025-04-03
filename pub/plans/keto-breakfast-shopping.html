@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keto Shopping List - Week 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .store-section {
+            margin-bottom: 20px;
+        }
+        .store-section h2 {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        ul li:last-child {
+            border-bottom: none;
+        }
+        .checked {
+            text-decoration: line-through;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Keto Shopping List - Week 1</h1>
+
+        <div class="store-section">
+            <h2>Produce</h2>
+            <ul id="produce-list">
+                <li>Spinach - 5 cups</li>
+                <li>Avocado - 3</li>
+                <li>Cherry Tomatoes - 1 cup</li>
+                <li>Mushrooms - 1 lb</li>
+                <li>Cauliflower - 1 head</li>
+                <li>Broccoli - 2 cups</li>
+            </ul>
+        </div>
+
+        <div class="store-section">
+            <h2>Dairy</h2>
+            <ul id="dairy-list">
+                <li>Eggs - 36</li>
+                <li>Cream Cheese - 4 oz</li>
+                <li>Shredded Cheddar Cheese - 2 cups</li>
+                <li>Heavy Cream - 1 cup</li>
+                <li>Muenster Cheese - 1 cup</li>
+                <li>Feta Cheese - 1/2 cup</li>
+                <li>Unsweetened Almond Milk - 4 cups</li>
+            </ul>
+        </div>
+
+        <div class="store-section">
+            <h2>Meat</h2>
+            <ul id="meat-list">
+                <li>Diced Ham - 1 cup</li>
+                <li>Sausage - 1 lb</li>
+                <li>Bacon - 12 slices</li>
+                <li>Smoked Salmon - 4 oz</li>
+            </ul>
+        </div>
+
+        <div class="store-section">
+            <h2>Pantry</h2>
+            <ul id="pantry-list">
+                <li>Almond Flour - 2 cups</li>
+                <li>Coconut Flour - 1/2 cup</li>
+                <li>Vanilla Extract - 1 tsp</li>
+                <li>Baking Powder - 1 tsp</li>
+                <li>Protein Powder - 1 scoop</li>
+                <li>Chia Seeds - 2 tbsp</li>
+                <li>Flaxseed Meal - 1/4 cup</li>
+                <li>Cinnamon - 1 tsp</li>
+                <li>Low-carb Tortilla - 2</li>
+                <li>Salsa - 1/2 cup</li>
+            </ul>
+        </div>
+
+        <div class="store-section">
+            <h2>Frozen</h2>
+            <ul id="frozen-list">
+                <li>Broccoli - 2 cups</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Add interactive functionality to mark items as "checked"
+        document.querySelectorAll('li').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('checked');
+            });
+        });
+    </script>
+</body>
+</html>
+

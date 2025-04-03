@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Health Calculator</h1>
+    <form id="health-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="sex">Sex:</label>
+        <select id="sex" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        <label for="unit-system">Unit System:</label>
+        <select id="unit-system">
+          <option value="metric">Metric (kg, cm)</option>
+          <option value="imperial">Imperial (lbs, ft, in)</option>
+        </select>
+        <div id="metric-fields">
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" required>
+          <label for="height-metric">Height (cm):</label>
+          <input type="number" id="height-metric" required>
+        </div>
+        <div id="imperial-fields" style="display: none;">
+          <label for="weight-imperial">Weight (lbs):</label>
+          <input type="number" id="weight-imperial">
+          <label for="height-ft">Height (ft):</label>
+          <input type="number" id="height-ft">
+          <label for="height-in">Height (in):</label>
+          <input type="number" id="height-in">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Measurements</legend>
+        <label for="waist">Waist (cm/in):</label>
+        <input type="number" id="waist">
+        <label for="hip">Hip (cm/in):</label>
+        <input type="number" id="hip">
+        <label for="neck">Neck (cm/in):</label>
+        <input type="number" id="neck">
+      </fieldset>
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="activity-level">Activity Level:</label>
+        <select id="activity-level">
+          <option value="1.2">Sedentary</option>
+          <option value="1.375">Lightly Active</option>
+          <option value="1.55">Moderately Active</option>
+          <option value="1.725">Very Active</option>
+          <option value="1.9">Extremely Active</option>
+        </select>
+        <label for="steps">Steps Per Day:</label>
+        <input type="number" id="steps">
+        <label for="sleep">Sleep Duration (hours):</label>
+        <input type="number" id="sleep">
+      </fieldset>
+      <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+  </div>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h2>Results</h2>
+      <div id="results-content"></div>
+      <button id="print-results" onclick="printResults()">Print Results</button>
+      <button id="close-modal" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

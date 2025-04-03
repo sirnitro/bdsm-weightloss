@@ -1,0 +1,17 @@
+# Ignore sensitive or compiled files
+.env
+vendor/
+node_modules/
+*.log
+.idea/
+*.bak
+*.swp
+*.swo
+.DS_Store
+__pycache__/
+*.sql
+auth/backup_*
+/uploads/*
+/cache/*
+/sessions/*
+/*.zip
